@@ -68,12 +68,6 @@ Built as a learning project — actively in development.
 
 - **Bullet collision box is off** — bullets check the *next* position before moving, which sometimes causes them to "die" one cell early next to a wall, or slip through a thin gap. Needs a tighter per-step check.
 
-- **Bullets are neutral** — the `Bullet` class has no `owner` field. When `checkcollisionstanks()` is implemented, bullets will damage anyone including the tank that fired them. Fix: add `int owner` to `Bullet` and skip damage if the hit tank matches the owner.
-
-- **Health reset loop bug** — in `startround()`, the health/status reset loop uses `auto p` (value copy) instead of `auto &p` (reference). Health resets do nothing — the actual player objects in the vector are untouched.
-
-- **Tank draw loop breaks early** — the loop that draws tanks uses `break` when it encounters a dead tank, which skips drawing the remaining alive players. Should be `continue`.
-
 - **No win condition** — the game loop runs forever. When one tank's health reaches zero nothing happens. A check for alive player count needs to be added after collision resolution.
 
 - **No victory screen** — winner display, ASCII big text, and "Press Enter to Continue" flow are not implemented yet.
