@@ -126,5 +126,5 @@ g++ -std=c++17 -o MultiTank Multi-Tank.cpp
 
 ## 👤 Author
 
-**Basit Ahmad** — [@Basit-Ahmad-GCUF](https://github.com/Basit-Ahmad-GCUF)  
-*Basit Creative Media*
+**Basit Ahmad** — CS Student at GCUF  
+[GitHub](https://github.com/Basit-Ahmad-GCUF) • [LinkedIn](https://www.linkedin.com/in/basit-ahmad-gcuf)
